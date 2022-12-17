@@ -1,0 +1,334 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400&display=swap');
+
+*{
+	margin:0;
+}
+
+.body{
+	margin: 0;
+	text-align: center;
+	 background: linear-gradient(200deg, #C3110A 40%, #080808 40%, #fff 41%);
+}
+
+.roket{
+	margin-left: -8%;
+  margin-top: 5%;
+  animation: globo 30s ease 0s infinite normal forwards;
+}
+
+@keyframes globo {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
+/* Pokemon */
+.Title{
+	padding: 10px;
+	width: 30%;
+  animation: title 16s ease-in-out 1s infinite reverse forwards;
+}
+
+@keyframes title {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+	
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+
+
+/* ash  pichachu */
+
+.ash{
+	width: 120px;
+}
+
+ 
+/* Pokemones*/
+.figcaption{
+   font-family: 'Press Start 2P', cursive;
+   font-size: 12px;
+}
+
+.contenedor-ball{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  animation: traslate linear 34s infinite;
+
+}
+
+ @keyframes traslate{
+    from{margin-left: 100%;}
+
+    to{margin-left: -30%;}
+}
+
+
+.pokebolas{
+  width: 30px;
+  height: 30px;
+   animation: girar 1s linear 0s infinite normal forwards;
+}
+
+@keyframes girar {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+.contenedor-ball1{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  animation: traslate1 linear 32s infinite;
+}
+
+@keyframes traslate1{
+    from{margin-left: -30%;}
+
+    to{margin-left: 100%;}
+
+}
+.pokebolas1{
+  width: 30px;
+  height: 30px;
+  animation: girar1 1s linear 0s infinite normal forwards;
+}
+
+@keyframes girar1 {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* poke-2 */
+.contenedor-ball2{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  animation: traslate2 linear 30s infinite;
+
+}
+
+ @keyframes traslate2{
+    from{margin-left: 100%;}
+
+    to{margin-left: -30%;}
+
+}
+
+.pokebolas2{
+  width: 30px;
+  height: 30px;
+  animation: girar2 1s linear 0s infinite normal forwards;
+}
+
+@keyframes girar2 {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+/* poke-3 */
+.contenedor-ball3{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  overflow-x: hidden;
+   position: absolute;
+  animation: traslate3 linear 28s infinite;
+}
+
+@keyframes traslate3{
+    from{margin-left: -30%;}
+
+    to{margin-left: 100%;}
+
+}
+.pokebolas3{
+  width: 30px;
+  height: 30px;
+  animation: girar3 1s linear 0s infinite normal forwards;
+}
+
+ @keyframes girar3 {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* poke4 */
+.contenedor-ball4{
+ width: 50px;
+  height: 50px;
+  padding: 10px;
+  overflow-x: hidden;
+  position: absolute;
+  animation: traslate4 linear 26s infinite;
+}
+
+@keyframes traslate4{
+    from{margin-left: 100%;}
+
+    to{margin-left: -30%;}
+
+}
+.pokebolas4{
+  width: 30px;
+  height: 30px;
+  animation: girar 1s linear 0s infinite normal forwards;
+}
+@keyframes girar {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+
+.contenedor{
+ width:15%;
+ display: flex;
+ flex-direction: row;
+ position: relative;
+ flex-wrap: wrap;
+ text-align: center;
+ 
+}
+
+.img{
+  align-items: center;
+	width: 150px;
+}
+
+/* card */
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 70%;
+}
+
+/* Main */
+
+.main{
+padding: 5px;
+margin-left: 5%;
+margin-top: 5%;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 1px;
+grid-row-gap: 8px;
+}
+/* responsive app */
+@media (min-width: 390px){
+	.main{
+		display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(10, 1fr);
+grid-column-gap: 1px;
+grid-row-gap: 1px;
+	}
+	.roket{
+		width: 20%;
+	}
+ .Title{
+	width: 60%;
+	margin-left: -2%;
+ }
+ .butterfree{
+	width: 12%;
+	margin-left: -3%;
+ }
+ .ash{
+	width: 20%;
+}
+}
+
+.container-charge{
+	margin-left: 500px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cargando{
+	font-family: 'Press Start 2P', cursive;
+	color: #db1212;
+}
